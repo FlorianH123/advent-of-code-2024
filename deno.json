@@ -1,6 +1,7 @@
 {
     "tasks": {
-        "day01": "deno run --allow-read src/day-01/main.ts"
+        "day01": "deno run --allow-read src/day-01/main.ts",
+        "day02": "deno run --allow-read src/day-02/main.ts"
     },
     "imports": {
         "@std/assert": "jsr:@std/assert@1",
