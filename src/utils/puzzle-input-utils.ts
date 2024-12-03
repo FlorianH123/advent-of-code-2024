@@ -17,6 +17,10 @@ export async function readInputLines(
     return lines;
 }
 
+export function readInput(path: URL): Promise<string> {
+    return Deno.readTextFile(path);
+}
+
 interface ReadInputLinesOptions {
     removeEmptyLines?: boolean;
 }
