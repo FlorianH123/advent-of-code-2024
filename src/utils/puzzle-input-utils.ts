@@ -17,6 +17,14 @@ export async function readInputLines(
     return lines;
 }
 
+export async function splitInputIntoSections(
+    input: string,
+    sectionSeparator = '\n\n',
+): Promise<string[][]> {
+    const sections = input.split(sectionSeparator);
+    return sections.map((section) => section.split('\n'));
+}
+
 export function readInput(path: URL): Promise<string> {
     return Deno.readTextFile(path);
 }
